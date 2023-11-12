@@ -1,21 +1,19 @@
-package ru.hh.tests;
-
+package hh.ru.tests;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import ru.hh.pages.MainPage;
-import ru.hh.pages.SignUpPage;
+import hh.ru.pages.MainPage;
+import hh.ru.pages.AutorizationPage;
 
-@Owner("Ирина")
+@Owner("Ирина ")
 @Feature("Главная страница")
 @DisplayName("Главная страница")
-
-public class MainPageTests extends TestBase{
+public class MainPageTest extends TestBase{
 
     MainPage mainPage = new MainPage();
-    SignUpPage signUpPage = new SignUpPage();
+    AutorizationPage autorizationPage = new AutorizationPage();
 
     @Test
     @Tag("web")
@@ -25,6 +23,6 @@ public class MainPageTests extends TestBase{
     void loginByEmailAndPasswordTest() {
         mainPage.openPage()
                 .clickSignUbButton();
-        signUpPage.checkOpeningSignupPage();
+        autorizationPage.checkOpeningAutorizationPage();
     }
 }

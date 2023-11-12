@@ -1,4 +1,4 @@
-package ru.hh.pages;
+package hh.ru.pages;
 
 
 import com.codeborne.selenide.SelenideElement;
